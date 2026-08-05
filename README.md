@@ -54,3 +54,9 @@ Do that before logging new Forge v1.0 workouts.
 SQLite persists normally on your own computer. Streamlit Community Cloud
 may reset locally written files after restarts or redeployments. Export
 history backups until permanent cloud storage is connected.
+
+## Forge v1.1 Cloud
+- Uses Supabase when Streamlit secrets are configured.
+- Keeps local SQLite as a fallback for local development.
+- Dashboard, Workout, History, Analytics, deletion, and exports use the same cloud data.
+- Never commit secret keys or `.streamlit/secrets.toml` to GitHub.
